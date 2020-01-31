@@ -1,0 +1,67 @@
+<html>
+    <head><title>Login Page</title>
+        <link rel="stylesheet" href="login.css"></head>
+    <body alink="red" vlink="aqua">
+        <div class="bg-image"></div>
+        <div class="bg-text">
+        <h1>Welcome to my login page</h1>
+        <form onsubmit="return validate()" action="form1.html">
+            <table align=center style="font-size: 30;">
+                <tr>
+                    <td style="color:aqua">Username :</td><td><input type="text" id="uname" placeholder="Username" ></td>
+                </tr>
+                <tr>    
+                <td style="color:aqua">Password :</td><td><input type="password" id="pass" placeholder="Password"></td>
+                </tr>
+                <tr><td>
+                </td>
+                <td></td>
+                </tr>
+                <tr><td>
+                </td>
+                <td></td>
+                </tr>
+                <tr><td>
+                </td>
+                <td></td>
+                </tr>
+                <tr><td>
+                </td>
+                <td></td>
+                </tr>
+                <tr>
+                    <td><button type="submit" style="font-size:20px;">Login</button></td>
+                    <td><button type="reset" style="font-size:20px;">Reset</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="font-size:15px;color:aqua;" href="forgot_password.html">Forgot Password</a></tr>
+            </table>
+        </form>
+        </div>
+    </body>
+    <script type="text/javascript">
+    function validate()
+            {
+                var username=document.getElementById("uname")
+                var password=document.getElementById("pass")
+                if(username.value =="student" && password.value == "student")
+                {
+                    return true;
+                }
+                else 
+                {
+                    alert("Invalid Username or Password");
+                    return false;
+                }
+            }
+     /*function forgot_pass()
+			{
+				var username=document.getElementById("uname")
+				if(username.value.trim()=="")
+				{
+					alert("Please Enter The UserId");
+				}
+				else
+				{
+					prompt("Please Enter Your Email-Id",eid);
+				}
+			}*/
+    </script>
+</html>
